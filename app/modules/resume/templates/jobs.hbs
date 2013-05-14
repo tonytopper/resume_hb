@@ -1,0 +1,16 @@
+{{#each jobs}}
+<li class="job">
+  <h3>{{positionTitle}}</h3>
+  <div class="info">
+    <div><span class="startYear">{{startYear}}</span> to <span class="endYear">{{endYear}}</span></div>
+    <div class="company">{{company}}</div>
+    <div class="city">{{city}}</div>
+    </div>
+    <ul class="highlights">
+        {{#each highlights}}
+        <li>{{text}}</li>
+        {{/each}}
+    </ul>
+<strong>Technologies:</strong>&nbsp;<span class="technologiesUsed">{{technologiesUsed}}</span>
+</li>
+{{/each}}
